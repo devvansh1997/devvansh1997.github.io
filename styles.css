@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+section#about, section#work, section#news {
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.project {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
