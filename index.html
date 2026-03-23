@@ -108,6 +108,33 @@
 			#projects ul.features li.img-hrnet::before      { background-image: url('images/hrnet_main.jpg'); }
 			#projects ul.features li.img-otsu::before       { background-image: url('images/otsu_main.png'); }
 
+			/* Research section header */
+			#research .research-header {
+				text-align: center;
+				padding: 3em 2em 1em;
+			}
+			#research .research-header h2 {
+				font-size: 2em;
+				color: #fff;
+				margin-bottom: 0.4em;
+			}
+			#research .research-header p {
+				color: rgba(255,255,255,0.6);
+				font-size: 0.95em;
+			}
+
+			/* Uniform research card image height */
+			#research .spotlight .image {
+				height: 420px;
+				overflow: hidden;
+			}
+			#research .spotlight .image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+
 			/* Experience Timeline */
 			.timeline-wrap {
 				max-width: 780px;
@@ -268,6 +295,10 @@
 
 				<!-- Research -->
 					<section id="research" class="wrapper alt style2">
+						<div class="research-header">
+							<h2>Research</h2>
+							<p>Publications and ongoing research in computer vision and multimodal reasoning.</p>
+						</div>
 						<section class="spotlight">
 							<div class="image"><img src="images/mario_main.png" alt="MaRIO Benchmark" /></div>
 							<div class="content">
@@ -306,29 +337,16 @@
 									<h3>Graduate Researcher</h3>
 									<span class="org">Center for Research in Computer Vision (CRCV) &mdash; UCF</span>
 									<ul>
-										<li>Developing a large-scale evaluation framework to analyze spatial reasoning capabilities of vision-language models across real-world multi-agent scenarios.</li>
+										<li>Developing a large-scale evaluation framework to analyze spatial reasoning capabilities of vision-language models across real-world scenarios.</li>
 										<li>Designed structured datasets, evaluation pipelines, and metrics to quantify gaps between semantic understanding and physical world reasoning.</li>
-										<li>Submitted MaRIO benchmark to ECCV 2026 (Paper #6266).</li>
 									</ul>
 								</div>
 
 								<div class="timeline-entry">
 									<div class="timeline-dot"></div>
-									<span class="timeline-date">2024</span>
-									<h3>Machine Learning Intern</h3>
-									<span class="org">Fellowship.AI &mdash; Remote</span>
-									<ul>
-										<li>Built an end-to-end CV pipeline for real-time workout activity recognition, achieving <strong>96.7% classification accuracy</strong>.</li>
-										<li>Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) to handle noisy real-world inputs.</li>
-										<li>Designed system components for robust activity classification and repetition counting in dynamic environments.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">2023 &ndash; 2024</span>
+									<span class="timeline-date">Jun 2024 &ndash; Aug 2024</span>
 									<h3>Data Operations Manager</h3>
-									<span class="org">Radford University, VA</span>
+									<span class="org">Radford University &mdash; Radford, VA</span>
 									<ul>
 										<li>Optimized data workflows and built Tableau dashboards to surface internship and career outcome insights for stakeholders.</li>
 										<li>Translated raw survey data into actionable insights, improving decision-making for academic and career services teams.</li>
@@ -337,22 +355,46 @@
 
 								<div class="timeline-entry">
 									<div class="timeline-dot"></div>
-									<span class="timeline-date">2022 &ndash; 2023</span>
-									<h3>Data Analyst Intern</h3>
-									<span class="org">Indian Institute of Technology Delhi</span>
+									<span class="timeline-date">May 2024 &ndash; Jun 2024</span>
+									<h3>Fire Safety Assistant</h3>
+									<span class="org">Campus Operations &mdash; Bowling Green State University</span>
 									<ul>
-										<li>Built automated data extraction pipelines to process policy documents and adapt to evolving regulatory changes.</li>
-										<li>Applied regex-based parsing to structure unorganized policy data for downstream classification systems.</li>
+										<li>Conducted fire safety checks for extinguishers across campus and tested life safety equipment including exit signs and emergency lights.</li>
+										<li>Processed and managed work orders through TMA systems for campus-wide coordination.</li>
 									</ul>
 								</div>
 
 								<div class="timeline-entry">
 									<div class="timeline-dot"></div>
-									<span class="timeline-date">2021 &ndash; 2022</span>
+									<span class="timeline-date">Sep 2021 &ndash; Dec 2024</span>
 									<h3>Teaching Assistant</h3>
 									<span class="org">Bowling Green State University</span>
 									<ul>
-										<li>Supported coursework, grading, and mentored students through technical problem-solving.</li>
+										<li>Supported coursework, grading, and mentoring students through technical problem-solving.</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">Apr 2022 &ndash; Jun 2022</span>
+									<h3>Machine Learning Fellow</h3>
+									<span class="org">Fellowship.AI &mdash; Remote</span>
+									<ul>
+										<li>Built an end-to-end computer vision pipeline for real-time workout activity recognition, achieving <strong>96.7% classification accuracy</strong>.</li>
+										<li>Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) to handle noisy inputs and varying real-world conditions.</li>
+										<li>Designed system components for practical deployment, enabling robust activity classification and repetition counting in dynamic environments.</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">Jul 2019 &ndash; Dec 2019</span>
+									<h3>Data Analyst Intern</h3>
+									<span class="org">Indian Institute of Technology Delhi</span>
+									<ul>
+										<li>Built automated data extraction pipelines to process policy documents and adapt to evolving regulatory changes.</li>
+										<li>Performed large-scale text preprocessing and annotation, improving data quality for downstream classification systems.</li>
+										<li>Applied regex-based parsing to structure unorganized policy data into usable formats for analysis.</li>
 									</ul>
 								</div>
 
@@ -385,11 +427,11 @@
 									<p>Designed and deployed a TinyML-based vision system for real-time affordance detection on an Arduino Nano BLE Sense. Optimized a CNN for on-device inference under strict memory and compute constraints.</p>
 								</li>
 								<li class="icon solid fa-robot img-hrnet">
-									<h3>HRNet Pose Estimation</h3>
+									<h3><a href="https://github.com/devvansh1997/HRNet_PoseEstimation" target="_blank">HRNet Pose Estimation</a></h3>
 									<p>End-to-end HRNet-w48 inference pipeline without MMCV. Reimplemented affine transforms, heatmap decoding, and skeleton visualization from scratch to demonstrate the full inference pipeline transparently.</p>
 								</li>
 								<li class="icon solid fa-sliders-h img-otsu">
-									<h3>Otsu Thresholding</h3>
+									<h3><a href="https://github.com/devvansh1997/OTSU_thresholding" target="_blank">Otsu Thresholding</a></h3>
 									<p>From-scratch implementation of Otsu's automatic image thresholding algorithm. Maximizes between-class variance across 256 threshold values to find the optimal binary segmentation without any manual tuning.</p>
 								</li>
 							</ul>
