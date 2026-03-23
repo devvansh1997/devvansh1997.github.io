@@ -11,6 +11,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Carousel behind banner */
+			#banner {
+				background-image: none !important;
+				position: relative;
+			}
+			#banner-carousel {
+				position: absolute;
+				inset: 0;
+				z-index: 0;
+				overflow: hidden;
+			}
+			#banner-carousel .slide {
+				position: absolute;
+				inset: 0;
+				background-size: cover;
+				background-position: center;
+				opacity: 0;
+				transition: opacity 1.2s ease-in-out;
+			}
+			#banner-carousel .slide.active {
+				opacity: 1;
+			}
+			/* Dark overlay so text stays readable */
+			#banner-carousel::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: rgba(0, 0, 0, 0.52);
+				z-index: 1;
+			}
+			/* Keep banner content above carousel */
+			#banner .inner,
+			#banner .more,
+			#banner:after {
+				position: relative;
+				z-index: 2;
+			}
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -41,6 +80,13 @@
 
 				<!-- Banner -->
 					<section id="banner">
+						<div id="banner-carousel">
+							<div class="slide active" style="background-image: url('images/cara_segmentation.webp')"></div>
+							<div class="slide" style="background-image: url('images/cara_objectdetection.webp')"></div>
+							<div class="slide" style="background-image: url('images/cara_brainsegmentation.jpeg')"></div>
+							<div class="slide" style="background-image: url('images/cara_semanticsegmentation.png')"></div>
+							<div class="slide" style="background-image: url('images/cara_generalized.avif')"></div>
+						</div>
 						<div class="inner">
 							<h2>Devansh Sharma</h2>
 							<p>Machine Learning Engineer<br />
@@ -168,6 +214,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+			(function() {
+				var slides = document.querySelectorAll('#banner-carousel .slide');
+				var current = 0;
+				setInterval(function() {
+					slides[current].classList.remove('active');
+					current = (current + 1) % slides.length;
+					slides[current].classList.add('active');
+				}, 3500);
+			})();
+		</script>
 
 	</body>
 </html>
