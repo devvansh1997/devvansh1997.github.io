@@ -57,12 +57,12 @@
 			/* Banner CTA buttons */
 			#banner .actions.special .button.primary {
 				background-color: #6e40c9 !important;
-				border-color: #6e40c9 !important;
+				border-color: #fff !important;
 				color: #fff !important;
 			}
 			#banner .actions.special .button.primary:hover {
 				background-color: #5a32a3 !important;
-				border-color: #5a32a3 !important;
+				border-color: #fff !important;
 			}
 			#banner .actions.special a[href*="github"] {
 				background-color: #24292e !important;
@@ -216,6 +216,37 @@
 				color: #fff;
 			}
 
+			/* Project card hover effect */
+			#projects ul.features li {
+				transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+				cursor: pointer;
+			}
+			#projects ul.features li:hover {
+				background: rgba(0, 0, 0, 0.35) !important;
+				box-shadow: inset 0 0 0 2px rgba(255,255,255,0.18), 0 8px 32px rgba(0,0,0,0.4);
+				transform: translateY(-3px);
+			}
+			#projects ul.features li:hover::before {
+				opacity: 0.28;
+			}
+
+			/* Gemini animated gradient text */
+			@keyframes gemini-flow {
+				0%   { background-position: 0% 50%; }
+				50%  { background-position: 100% 50%; }
+				100% { background-position: 0% 50%; }
+			}
+			.gemini-text {
+				background: linear-gradient(270deg, #4285F4, #9B72CB, #00BCD4, #EA4335, #FBBC04, #4285F4);
+				background-size: 400% 400%;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				animation: gemini-flow 5s ease infinite;
+				font-weight: 700;
+				display: inline-block;
+			}
+
 			/* Frosted dark box around banner text */
 			#banner .inner {
 				background: rgba(0, 0, 0, 0.55);
@@ -266,7 +297,7 @@
 						<div class="inner">
 							<h2>Devansh Sharma</h2>
 							<p>Machine Learning Engineer<br />
-							Computer Vision &bull; VLMs &bull; End-to-End ML Systems<br />
+							Computer Vision &bull; Multimodal AI &bull; Reasoning Systems &bull; ML Engineering<br />
 							<em>M.Sc Computer Vision @ UCF &nbsp;&bull;&nbsp; CRCV &nbsp;&bull;&nbsp; ECCV 2026</em></p>
 							<ul class="actions special">
 								<li><a href="mailto:de807845@ucf.edu" class="button primary">Email Me</a></li>
@@ -302,15 +333,17 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/mario_main.png" alt="MaRIO Benchmark" /></div>
 							<div class="content">
-								<h2>MaRIO: Multi-agent Collaborative Reasoning<br />in MLLMs &mdash; ECCV 2026</h2>
+								<h2>MaRIO: Multi-agent Collaborative Reasoning<br />in MLLMs</h2>
 								<p>Introduced MaRIO, a benchmark evaluating how multimodal LLMs reason across independent agent observations of a shared environment &mdash; without shared camera poses or metadata. Evaluated 23 state-of-the-art MLLMs across 3,255 QA samples. All models fall substantially below human performance (73.3%), with Gemini-2.5-Pro reaching 56.7% as the best model.</p>
+								<p><span class="gemini-text">Submitted to ECCV 2026</span></p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/bgvp_main.gif" alt="BGVP ITSC 2024" /></div>
 							<div class="content">
-								<h2>BGVP: Object Detector Comparison<br />on Pedestrian Safety &mdash; ITSC 2024</h2>
-								<p>Evaluated YOLO-X, YOLOv5, YOLOv4, Faster R-CNN, and EfficientDet on a vulnerable pedestrian dataset. Analyzed detection performance under occlusion and low-light conditions relevant to autonomous driving safety. Published at IEEE ITSC 2024.</p>
+								<h2>BGVP: Object Detector Comparison<br />on Pedestrian Safety</h2>
+								<p>Evaluated YOLO-X, YOLOv5, YOLOv4, Faster R-CNN, and EfficientDet on a vulnerable pedestrian dataset. Analyzed detection performance under occlusion and low-light conditions relevant to autonomous driving safety.</p>
+								<p><span class="gemini-text">Published at IEEE ITSC 2024</span></p>
 							</div>
 						</section>
 						<section class="spotlight">
