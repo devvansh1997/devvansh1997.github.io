@@ -105,6 +105,89 @@
 			#projects ul.features li.img-cliphar::before    { background-image: url('images/cliponhar_main.png'); }
 			#projects ul.features li.img-brain::before      { background-image: url('images/braintumorseg_main.jpg'); }
 			#projects ul.features li.img-tinyml::before     { background-image: url('images/tinyml_main.jpg'); }
+			#projects ul.features li.img-hrnet::before      { background-image: url('images/hrnet_main.jpg'); }
+			#projects ul.features li.img-otsu::before       { background-image: url('images/otsu_main.png'); }
+
+			/* Experience Timeline */
+			.timeline-wrap {
+				max-width: 780px;
+				margin: 0 auto;
+				position: relative;
+				padding-left: 44px;
+				text-align: left;
+			}
+			.timeline-wrap::before {
+				content: '';
+				position: absolute;
+				left: 6px;
+				top: 6px;
+				bottom: 6px;
+				width: 2px;
+				background: rgba(255,255,255,0.2);
+			}
+			.timeline-entry {
+				position: relative;
+				margin-bottom: 2.8em;
+			}
+			.timeline-entry:last-child {
+				margin-bottom: 0;
+			}
+			.timeline-dot {
+				position: absolute;
+				left: -51px;
+				top: 5px;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background: #fff;
+				border: 2px solid rgba(255,255,255,0.4);
+			}
+			.timeline-date {
+				display: inline-block;
+				font-size: 0.7em;
+				font-weight: 700;
+				color: rgba(255,255,255,0.45);
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				margin-bottom: 0.35em;
+			}
+			.timeline-entry h3 {
+				font-size: 1em !important;
+				font-weight: 700 !important;
+				color: #fff !important;
+				margin: 0 0 0.2em !important;
+				border: none !important;
+				padding: 0 !important;
+			}
+			.timeline-entry .org {
+				font-size: 0.85em;
+				color: rgba(255,255,255,0.55);
+				font-style: italic;
+				margin-bottom: 0.75em;
+				display: block;
+			}
+			.timeline-entry ul {
+				list-style: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			.timeline-entry ul li {
+				font-size: 0.875em;
+				color: rgba(255,255,255,0.72);
+				padding-left: 1.1em;
+				position: relative;
+				margin-bottom: 0.4em;
+				line-height: 1.65;
+			}
+			.timeline-entry ul li::before {
+				content: '–';
+				position: absolute;
+				left: 0;
+				color: rgba(255,255,255,0.35);
+			}
+			.timeline-entry ul li strong {
+				color: #fff;
+			}
 
 			/* Frosted dark box around banner text */
 			#banner .inner {
@@ -134,8 +217,8 @@
 											<li><a href="#banner">Home</a></li>
 											<li><a href="#about">About</a></li>
 											<li><a href="#research">Research</a></li>
-											<li><a href="#projects">Projects</a></li>
 											<li><a href="#experience">Experience</a></li>
+											<li><a href="#projects">Projects</a></li>
 											<li><a href="#footer">Contact</a></li>
 										</ul>
 									</div>
@@ -208,8 +291,77 @@
 						</section>
 					</section>
 
+				<!-- Experience -->
+					<section id="experience" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Experience</h2>
+								<p>Building real-world systems across academia and industry.</p>
+							</header>
+							<div class="timeline-wrap">
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">2025 &ndash; Present</span>
+									<h3>Graduate Researcher</h3>
+									<span class="org">Center for Research in Computer Vision (CRCV) &mdash; UCF</span>
+									<ul>
+										<li>Developing a large-scale evaluation framework to analyze spatial reasoning capabilities of vision-language models across real-world multi-agent scenarios.</li>
+										<li>Designed structured datasets, evaluation pipelines, and metrics to quantify gaps between semantic understanding and physical world reasoning.</li>
+										<li>Submitted MaRIO benchmark to ECCV 2026 (Paper #6266).</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">2024</span>
+									<h3>Machine Learning Intern</h3>
+									<span class="org">Fellowship.AI &mdash; Remote</span>
+									<ul>
+										<li>Built an end-to-end CV pipeline for real-time workout activity recognition, achieving <strong>96.7% classification accuracy</strong>.</li>
+										<li>Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) to handle noisy real-world inputs.</li>
+										<li>Designed system components for robust activity classification and repetition counting in dynamic environments.</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">2023 &ndash; 2024</span>
+									<h3>Data Operations Manager</h3>
+									<span class="org">Radford University, VA</span>
+									<ul>
+										<li>Optimized data workflows and built Tableau dashboards to surface internship and career outcome insights for stakeholders.</li>
+										<li>Translated raw survey data into actionable insights, improving decision-making for academic and career services teams.</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">2022 &ndash; 2023</span>
+									<h3>Data Analyst Intern</h3>
+									<span class="org">Indian Institute of Technology Delhi</span>
+									<ul>
+										<li>Built automated data extraction pipelines to process policy documents and adapt to evolving regulatory changes.</li>
+										<li>Applied regex-based parsing to structure unorganized policy data for downstream classification systems.</li>
+									</ul>
+								</div>
+
+								<div class="timeline-entry">
+									<div class="timeline-dot"></div>
+									<span class="timeline-date">2021 &ndash; 2022</span>
+									<h3>Teaching Assistant</h3>
+									<span class="org">Bowling Green State University</span>
+									<ul>
+										<li>Supported coursework, grading, and mentored students through technical problem-solving.</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</section>
+
 				<!-- Projects -->
-					<section id="projects" class="wrapper style3 special">
+					<section id="projects" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
 								<h2>Projects</h2>
@@ -232,28 +384,14 @@
 									<h3>TinyML Affordance Recognition</h3>
 									<p>Designed and deployed a TinyML-based vision system for real-time affordance detection on an Arduino Nano BLE Sense. Optimized a CNN for on-device inference under strict memory and compute constraints.</p>
 								</li>
-								<li class="icon solid fa-robot">
+								<li class="icon solid fa-robot img-hrnet">
 									<h3>HRNet Pose Estimation</h3>
 									<p>End-to-end HRNet-w48 inference pipeline without MMCV. Reimplemented affine transforms, heatmap decoding, and skeleton visualization from scratch to demonstrate the full inference pipeline transparently.</p>
 								</li>
-								<li class="icon solid fa-sliders-h">
+								<li class="icon solid fa-sliders-h img-otsu">
 									<h3>Otsu Thresholding</h3>
 									<p>From-scratch implementation of Otsu's automatic image thresholding algorithm. Maximizes between-class variance across 256 threshold values to find the optimal binary segmentation without any manual tuning.</p>
 								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Experience -->
-					<section id="experience" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Experience &amp; Education</h2>
-								<p>M.Sc Computer Vision, UCF (GPA 3.92) &nbsp;&bull;&nbsp; M.Sc CS, BGSU (GPA 3.75) &nbsp;&bull;&nbsp; B.Eng CS, Manav Rachna</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="mailto:de807845@ucf.edu" class="button fit primary">Get In Touch</a></li>
-								<li><a href="https://www.linkedin.com/in/devanshsharma1997/" class="button fit" target="_blank">View LinkedIn</a></li>
 							</ul>
 						</div>
 					</section>
