@@ -11,15 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 		<style>
 			/* Carousel behind banner */
 			#banner {
 				background-image: none !important;
-				position: relative;
 			}
 			#banner-carousel {
 				position: absolute;
-				inset: 0;
+				top: 0; left: 0; right: 0; bottom: 0;
 				z-index: 0;
 				overflow: hidden;
 			}
@@ -29,7 +29,7 @@
 				background-size: cover;
 				background-position: center;
 				opacity: 0;
-				transition: opacity 1.2s ease-in-out;
+				transition: opacity 1.5s ease-in-out;
 			}
 			#banner-carousel .slide.active {
 				opacity: 1;
@@ -46,8 +46,51 @@
 			#banner .inner,
 			#banner .more,
 			#banner:after {
-				position: relative;
 				z-index: 2;
+			}
+
+			/* JetBrains Mono for everything */
+			body, h1, h2, h3, h4, h5, h6, p, a, li, input, button {
+				font-family: 'JetBrains Mono', monospace !important;
+			}
+
+			/* Banner CTA buttons */
+			#banner .actions.special .button.primary {
+				background-color: #6e40c9 !important;
+				border-color: #6e40c9 !important;
+				color: #fff !important;
+			}
+			#banner .actions.special .button.primary:hover {
+				background-color: #5a32a3 !important;
+				border-color: #5a32a3 !important;
+			}
+			#banner .actions.special a[href*="github"] {
+				background-color: #24292e !important;
+				border-color: #24292e !important;
+				color: #fff !important;
+			}
+			#banner .actions.special a[href*="github"]:hover {
+				background-color: #3a3f45 !important;
+				border-color: #3a3f45 !important;
+			}
+			#banner .actions.special a[href*="linkedin"] {
+				background-color: #0a66c2 !important;
+				border-color: #0a66c2 !important;
+				color: #fff !important;
+			}
+			#banner .actions.special a[href*="linkedin"]:hover {
+				background-color: #0857a8 !important;
+				border-color: #0857a8 !important;
+			}
+
+			/* Frosted dark box around banner text */
+			#banner .inner {
+				background: rgba(0, 0, 0, 0.55);
+				backdrop-filter: blur(6px);
+				-webkit-backdrop-filter: blur(6px);
+				border-radius: 10px;
+				padding: 3em 3.5em;
+				display: inline-block;
 			}
 		</style>
 	</head>
@@ -222,7 +265,7 @@
 					slides[current].classList.remove('active');
 					current = (current + 1) % slides.length;
 					slides[current].classList.add('active');
-				}, 3500);
+				}, 5000);
 			})();
 		</script>
 
