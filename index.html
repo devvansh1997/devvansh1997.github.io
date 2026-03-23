@@ -83,6 +83,29 @@
 				border-color: #0857a8 !important;
 			}
 
+			/* Project card background images */
+			#projects ul.features li {
+				position: relative;
+				overflow: hidden;
+			}
+			#projects ul.features li::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-size: cover;
+				background-position: center;
+				opacity: 0.18;
+				z-index: 0;
+			}
+			#projects ul.features li > * {
+				position: relative;
+				z-index: 1;
+			}
+			#projects ul.features li.img-sambbox::before    { background-image: url('images/sambbox_main.jpg'); }
+			#projects ul.features li.img-cliphar::before    { background-image: url('images/cliponhar_main.png'); }
+			#projects ul.features li.img-brain::before      { background-image: url('images/braintumorseg_main.jpg'); }
+			#projects ul.features li.img-tinyml::before     { background-image: url('images/tinyml_main.jpg'); }
+
 			/* Frosted dark box around banner text */
 			#banner .inner {
 				background: rgba(0, 0, 0, 0.55);
@@ -163,21 +186,21 @@
 				<!-- Research -->
 					<section id="research" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="MaRIO Benchmark" /></div>
+							<div class="image"><img src="images/mario_main.png" alt="MaRIO Benchmark" /></div>
 							<div class="content">
 								<h2>MaRIO: Multi-agent Collaborative Reasoning<br />in MLLMs &mdash; ECCV 2026</h2>
 								<p>Introduced MaRIO, a benchmark evaluating how multimodal LLMs reason across independent agent observations of a shared environment &mdash; without shared camera poses or metadata. Evaluated 23 state-of-the-art MLLMs across 3,255 QA samples. All models fall substantially below human performance (73.3%), with Gemini-2.5-Pro reaching 56.7% as the best model.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="ITSC 2024" /></div>
+							<div class="image"><img src="images/bgvp_main.gif" alt="BGVP ITSC 2024" /></div>
 							<div class="content">
-								<h2>Object Detector Comparison<br />on Pedestrian Safety &mdash; ITSC 2024</h2>
+								<h2>BGVP: Object Detector Comparison<br />on Pedestrian Safety &mdash; ITSC 2024</h2>
 								<p>Evaluated YOLO-X, YOLOv5, YOLOv4, Faster R-CNN, and EfficientDet on a vulnerable pedestrian dataset. Analyzed detection performance under occlusion and low-light conditions relevant to autonomous driving safety. Published at IEEE ITSC 2024.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="Fellowship.AI" /></div>
+							<div class="image"><img src="images/fellowship_main.png" alt="Fellowship.AI" /></div>
 							<div class="content">
 								<h2>Real-time Workout Activity Recognition<br />Fellowship.AI</h2>
 								<p>Built an end-to-end CV pipeline achieving <strong>96.7% classification accuracy</strong>. Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) to handle noisy real-world inputs and enable robust activity classification and repetition counting in dynamic environments.</p>
@@ -193,19 +216,19 @@
 								<p>End-to-end computer vision systems built across segmentation, recognition, and medical imaging.</p>
 							</header>
 							<ul class="features">
-								<li class="icon solid fa-draw-polygon">
+								<li class="icon solid fa-draw-polygon img-sambbox">
 									<h3><a href="https://github.com/devvansh1997/SAM-BBox-Automation" target="_blank">SAM BBox Automation</a></h3>
 									<p>Automated instance segmentation pipeline comparing Grounding DINO vs. YOLOv11x as detection backends, both feeding into SAM2. Evaluated on CamVid — YOLOv11 achieves Dice 0.63, outperforming DINO by 49%.</p>
 								</li>
-								<li class="icon solid fa-running">
+								<li class="icon solid fa-running img-cliphar">
 									<h3><a href="https://github.com/devvansh1997/CLIP-on-HumanActivity-Recognition" target="_blank">CLIP on HAR</a></h3>
 									<p>Fine-tuned CLIP and SigLIP on a 15-class activity recognition dataset using contrastive learning with cross-batch memory (XBM). SigLIP achieves F1 0.86 and 86.1% accuracy with a 32k effective batch size.</p>
 								</li>
-								<li class="icon solid fa-x-ray">
+								<li class="icon solid fa-x-ray img-brain">
 									<h3><a href="https://github.com/devvansh1997/Brain-Tumor-Segmentation" target="_blank">Brain Tumor Segmentation</a></h3>
 									<p>2D U-Net pipeline for segmenting tumor regions from 3D BraTS MRI volumes. Combined Dice + CrossEntropy loss, 5-fold cross-validation, evaluated with Dice score and HD95. Designed for local and HPC reproducibility.</p>
 								</li>
-								<li class="icon solid fa-microchip">
+								<li class="icon solid fa-microchip img-tinyml">
 									<h3>TinyML Affordance Recognition</h3>
 									<p>Designed and deployed a TinyML-based vision system for real-time affordance detection on an Arduino Nano BLE Sense. Optimized a CNN for on-device inference under strict memory and compute constraints.</p>
 								</li>
