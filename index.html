@@ -1,550 +1,376 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Devansh Sharma | Computer Vision & ML Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="Devansh Sharma: computer vision and ML engineer, M.Sc. Computer Vision at UCF CRCV (Dec 2026). Publications at NeurIPS 2026 and IEEE ITSC 2024; first-author paper under review at ICLR 2027." />
-		<meta property="og:title" content="Devansh Sharma | Computer Vision & ML Engineer" />
-		<meta property="og:description" content="Perception, multimodal models, and ML systems. NeurIPS 2026 · IEEE ITSC 2024 · ICLR 2027 (under review)." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://devvansh1997.github.io/" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-		<style>
-			/* Carousel behind banner */
-			#banner {
-				background-image: none !important;
-			}
-			#banner-carousel {
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				z-index: 0;
-				overflow: hidden;
-			}
-			#banner-carousel .slide {
-				position: absolute;
-				inset: 0;
-				background-size: cover;
-				background-position: center;
-				opacity: 0;
-				transition: opacity 1.5s ease-in-out;
-			}
-			#banner-carousel .slide.active {
-				opacity: 1;
-			}
-			/* Dark overlay so text stays readable */
-			#banner-carousel::after {
-				content: '';
-				position: absolute;
-				inset: 0;
-				background: rgba(0, 0, 0, 0.52);
-				z-index: 1;
-			}
-			/* Keep banner content above carousel */
-			#banner .inner,
-			#banner .more,
-			#banner:after {
-				z-index: 2;
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devansh Sharma | Computer Vision &amp; ML Engineer</title>
+  <meta name="description" content="Devansh Sharma: computer vision and ML engineer, M.Sc. Computer Vision at UCF CRCV (Dec 2026). Publications at NeurIPS 2026 and IEEE ITSC 2024; first-author paper under review at ICLR 2027." />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devvansh1997.github.io/" />
+  <meta property="og:title" content="Devansh Sharma | Computer Vision &amp; ML Engineer" />
+  <meta property="og:description" content="Perception, multimodal models, and ML systems. NeurIPS 2026 · IEEE ITSC 2024 · ICLR 2027 (under review)." />
+  <meta property="og:image" content="https://devvansh1997.github.io/images/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/site.css?v=2026102001" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-			/* JetBrains Mono for everything */
-			body, h1, h2, h3, h4, h5, h6, p, a, li, input, button {
-				font-family: 'JetBrains Mono', monospace !important;
-			}
+  <header class="nav" id="nav">
+    <div class="container">
+      <a class="brand" href="#top">Devansh Sharma</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#lookout">Lookout</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a class="btn sm" href="files/Devansh_Sharma_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>Resume</a>
+      </nav>
+    </div>
+  </header>
 
-			/* Banner CTA buttons */
-			#banner .actions.special .button.primary {
-				background-color: #6e40c9 !important;
-				border: 2px solid #fff !important;
-				color: #fff !important;
-			}
-			#banner .actions.special .button.primary:hover {
-				background-color: #5a32a3 !important;
-				border: 2px solid #fff !important;
-			}
-			#banner .actions.special a[href*="github"] {
-				background-color: #24292e !important;
-				border-color: #24292e !important;
-				color: #fff !important;
-			}
-			#banner .actions.special a[href*="github"]:hover {
-				background-color: #3a3f45 !important;
-				border-color: #3a3f45 !important;
-			}
-			#banner .actions.special a[href*="linkedin"] {
-				background-color: #0a66c2 !important;
-				border-color: #0a66c2 !important;
-				color: #fff !important;
-			}
-			#banner .actions.special a[href*="linkedin"]:hover {
-				background-color: #0857a8 !important;
-				border-color: #0857a8 !important;
-			}
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Computer vision &middot; ML engineering</p>
+          <h1>Devansh Sharma</h1>
+          <p class="lead">I build and stress-test perception models, from multi-sensor driving stacks to finding where vision-language models fail.</p>
+          <p class="sub">M.Sc. Computer Vision at UCF's Center for Research in Computer Vision, graduating December 2026. Open to full-time computer vision and ML engineering roles from January 2027.</p>
+          <ul class="badges">
+            <li><a class="badge" href="#pub-mario">NeurIPS 2026</a></li>
+            <li><a class="badge" href="#pub-itsc">IEEE ITSC 2024 &middot; first author</a></li>
+            <li><a class="badge" href="#pub-lotus">ICLR 2027 &middot; under review</a></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="files/Devansh_Sharma_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>Resume</a>
+            <a class="btn" href="mailto:de807845@ucf.edu"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a>
+            <a class="btn" href="https://github.com/devvansh1997" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/devanshsharma1997/" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=_Q3loWUAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Scholar</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="images/headshot.jpg" alt="Portrait of Devansh Sharma" width="640" height="800" />
+        </div>
+      </div>
+    </section>
 
-			/* Project card background images */
-			#projects ul.features li {
-				position: relative;
-				overflow: hidden;
-			}
-			#projects ul.features li::before {
-				content: '';
-				position: absolute;
-				inset: 0;
-				background-size: cover;
-				background-position: center;
-				opacity: 0.18;
-				z-index: 0;
-			}
-			#projects ul.features li > * {
-				position: relative;
-				z-index: 1;
-			}
-			#projects ul.features li.img-sambbox::before    { background-image: url('images/sambbox_main.jpg'); }
-			#projects ul.features li.img-cliphar::before    { background-image: url('images/cliponhar_main.png'); }
-			#projects ul.features li.img-brain::before      { background-image: url('images/braintumorseg_main.jpg'); }
-			#projects ul.features li.img-hrnet::before      { background-image: url('images/hrnet_main.jpg'); }
+    <div class="now">
+      <div class="container">
+        <span><span class="pulse" aria-hidden="true"></span><strong>Now:</strong> building Lookout, a real-time AV perception stack</span>
+        <span>Graduating Dec 2026</span>
+        <span>Orlando, FL &middot; open to relocation and remote</span>
+      </div>
+    </div>
 
-			/* Research section header */
-			#research .research-header {
-				text-align: center;
-				padding: 3em 2em 1em;
-			}
-			#research .research-header h2 {
-				font-size: 2em;
-				color: #fff;
-				margin-bottom: 0.4em;
-			}
-			#research .research-header p {
-				color: rgba(255,255,255,0.6);
-				font-size: 0.95em;
-			}
+    <section class="block" id="lookout">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured project</h2>
+          <p>What I'm building right now.</p>
+        </div>
+        <article class="featured">
+          <div class="text">
+            <span class="status">In progress</span>
+            <h3>Lookout: a real-time perception stack for autonomous driving</h3>
+            <p>A camera + LiDAR + radar perception stack built on ROS2 and replayed from real nuScenes drives: 3D object detection (PointPillars), 2D detection across six cameras, sensor fusion, and multi-object tracking, targeting real-time on a single consumer GPU.</p>
+            <ul class="checklist">
+              <li class="done"><strong>Built:</strong> the nuScenes-to-ROS2 replay pipeline (6 cameras, LiDAR, 5 radars, full sensor calibration via TF)</li>
+              <li class="done"><strong>Built:</strong> the calibration and coordinate-transform layer for multi-sensor fusion</li>
+              <li class="next"><strong>Next:</strong> fusion and tracking, TensorRT deployment, and a live latency dashboard</li>
+            </ul>
+            <ul class="chips">
+              <li class="chip">ROS2</li><li class="chip">nuScenes</li><li class="chip">PyTorch</li><li class="chip">PointPillars</li><li class="chip">YOLO</li>
+            </ul>
+          </div>
+          <div class="diagram">
+            <svg viewBox="0 0 540 270" role="img" aria-labelledby="lk-title lk-desc">
+              <title id="lk-title">Lookout architecture</title>
+              <desc id="lk-desc">Cameras, LiDAR, and radar are replayed from nuScenes (built). Cameras feed 2D detection and LiDAR feeds 3D detection; both, plus radar, feed sensor fusion, then tracking and forecasting (in progress).</desc>
+              <defs>
+                <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4a5560" /></marker>
+              </defs>
+              <path class="d-edge" d="M120 45 H158" marker-end="url(#arw)" />
+              <path class="d-edge" d="M120 135 H158" marker-end="url(#arw)" />
+              <path class="d-edge" d="M284 45 H302 V118 H320" marker-end="url(#arw)" />
+              <path class="d-edge" d="M284 135 H318" marker-end="url(#arw)" />
+              <path class="d-edge" d="M120 225 H364 V178" marker-end="url(#arw)" />
+              <path class="d-edge" d="M408 128 H422 V68 H438" marker-end="url(#arw)" />
+              <path class="d-edge" d="M408 150 H422 V202 H438" marker-end="url(#arw)" />
+              <g><rect class="d-box d-built" x="8" y="22" width="112" height="46" rx="8" /><text class="d-t" x="64" y="42" text-anchor="middle">6 cameras</text><text class="d-s" x="64" y="58" text-anchor="middle">replay</text></g>
+              <g><rect class="d-box d-built" x="8" y="112" width="112" height="46" rx="8" /><text class="d-t" x="64" y="132" text-anchor="middle">LiDAR</text><text class="d-s" x="64" y="148" text-anchor="middle">replay</text></g>
+              <g><rect class="d-box d-built" x="8" y="202" width="112" height="46" rx="8" /><text class="d-t" x="64" y="222" text-anchor="middle">5 radars</text><text class="d-s" x="64" y="238" text-anchor="middle">replay</text></g>
+              <g><rect class="d-box d-wip" x="160" y="22" width="124" height="46" rx="8" /><text class="d-t" x="222" y="42" text-anchor="middle">2D detection</text><text class="d-s" x="222" y="58" text-anchor="middle">YOLO</text></g>
+              <g><rect class="d-box d-wip" x="160" y="112" width="124" height="46" rx="8" /><text class="d-t" x="222" y="132" text-anchor="middle">3D detection</text><text class="d-s" x="222" y="148" text-anchor="middle">PointPillars</text></g>
+              <g><rect class="d-box d-wip" x="322" y="94" width="86" height="82" rx="8" /><text class="d-t" x="365" y="132" text-anchor="middle">Fusion</text><text class="d-s" x="365" y="148" text-anchor="middle">+ radar</text></g>
+              <g><rect class="d-box d-wip" x="440" y="45" width="92" height="46" rx="8" /><text class="d-t" x="486" y="72" text-anchor="middle">Tracking</text></g>
+              <g><rect class="d-box d-wip" x="440" y="179" width="92" height="46" rx="8" /><text class="d-t" x="486" y="206" text-anchor="middle">Forecasting</text></g>
+            </svg>
+            <div class="legend"><span class="built">built</span><span class="wip">in progress</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-			/* Uniform research card image height */
-			#research .spotlight .image {
-				height: 420px;
-				overflow: hidden;
-			}
-			#research .spotlight .image img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: center;
-			}
+    <section class="block" id="publications">
+      <div class="container">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p>Benchmarks and methods for finding where vision and language models fail.</p>
+        </div>
+        <div class="pubs">
+          <article class="pub" id="pub-mario">
+            <div class="media">
+              <button class="zoom" type="button" data-full="images/mario_main.jpg" aria-label="Enlarge the MaRiO overview figure"><img src="images/mario_main.jpg" alt="MaRiO example: three agents view one scene and answer a navigation question" loading="lazy" /></button>
+              <p class="hint">Click to enlarge</p>
+            </div>
+            <div>
+              <p class="venue">NeurIPS 2026 &middot; Evaluations &amp; Datasets Track</p>
+              <h3>MaRiO: Multi-agent Collaborative Reasoning via Shared Observations in MLLMs</h3>
+              <p class="authors">Nathaniel Redmond*, Fidel Omar Tito Cruz*, <strong>Devansh Sharma</strong>, Shehreen Azad, Sirshapan Mitra, Shruti Vyas, Yogesh S Rawat &nbsp;(*equal contribution)</p>
+              <p class="summary">A benchmark of 3,255 questions over 1,680 multi-agent observation sets (real scenes plus VirtualHome, Habitat-Sim, and AI2-THOR) that tests whether multimodal LLMs can reason across agents' views with no shared camera information. Of 23 models evaluated zero-shot, the best (Gemini 2.5 Pro) reached 55.7% against 73.2% for humans; most open-source models scored 30&ndash;42%.</p>
+              <p class="role"><strong>My role:</strong> co-designed the benchmark, ran data curation and annotation, built the annotation and review tool used by three expert annotators, and built the evaluation harness.</p>
+              <ul class="links">
+                <li><a class="btn sm" href="https://github.com/devvansh1997/MaRIO-Benchmark" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>Code</a></li>
+                <li><a class="btn sm" href="https://huggingface.co/datasets/mariobench2026/MaRiO" target="_blank" rel="noopener"><i class="fas fa-database" aria-hidden="true"></i>Dataset</a></li>
+              </ul>
+            </div>
+          </article>
 
-			/* Experience Timeline */
-			.timeline-wrap {
-				max-width: 780px;
-				margin: 0 auto;
-				position: relative;
-				padding-left: 44px;
-				text-align: left;
-			}
-			.timeline-wrap::before {
-				content: '';
-				position: absolute;
-				left: 6px;
-				top: 6px;
-				bottom: 6px;
-				width: 2px;
-				background: rgba(255,255,255,0.2);
-			}
-			.timeline-entry {
-				position: relative;
-				margin-bottom: 2.8em;
-			}
-			.timeline-entry:last-child {
-				margin-bottom: 0;
-			}
-			.timeline-dot {
-				position: absolute;
-				left: -51px;
-				top: 5px;
-				width: 13px;
-				height: 13px;
-				border-radius: 50%;
-				background: #fff;
-				border: 2px solid rgba(255,255,255,0.4);
-			}
-			.timeline-date {
-				display: inline-block;
-				font-size: 0.7em;
-				font-weight: 700;
-				color: rgba(255,255,255,0.45);
-				letter-spacing: 0.12em;
-				text-transform: uppercase;
-				margin-bottom: 0.35em;
-			}
-			.timeline-entry h3 {
-				font-size: 1em !important;
-				font-weight: 700 !important;
-				color: #fff !important;
-				margin: 0 0 0.2em !important;
-				border: none !important;
-				padding: 0 !important;
-			}
-			.timeline-entry .org {
-				font-size: 0.85em;
-				color: rgba(255,255,255,0.55);
-				font-style: italic;
-				margin-bottom: 0.75em;
-				display: block;
-			}
-			.timeline-entry ul {
-				list-style: none !important;
-				padding: 0 !important;
-				margin: 0 !important;
-			}
-			.timeline-entry ul li {
-				font-size: 0.875em;
-				color: rgba(255,255,255,0.72);
-				padding-left: 1.1em;
-				position: relative;
-				margin-bottom: 0.4em;
-				line-height: 1.65;
-			}
-			.timeline-entry ul li::before {
-				content: '–';
-				position: absolute;
-				left: 0;
-				color: rgba(255,255,255,0.35);
-			}
-			.timeline-entry ul li strong {
-				color: #fff;
-			}
+          <article class="pub" id="pub-lotus">
+            <div class="media">
+              <button class="zoom" type="button" data-full="images/lotus_main.jpg" aria-label="Enlarge the LOTUS method figure"><img class="contain" src="images/lotus_main.jpg" alt="LOTUS pipeline: activation extraction, token-wise order statistics, projection, low-rank representation, detection readout" loading="lazy" /></button>
+              <p class="hint">Click to enlarge</p>
+            </div>
+            <div>
+              <p class="venue">Under review &middot; ICLR 2027</p>
+              <h3>LLM Hallucination Detection via Low-rank Multilinear Decomposition</h3>
+              <p class="authors"><strong>Devansh Sharma</strong>, Faizul Rakib Sayem, Shahana Ibrahim</p>
+              <p class="summary">LOTUS summarizes a large language model's hidden states with token order statistics and compresses them with an unsupervised Tucker-2 decomposition into 896-dimensional features for a hallucination classifier. It beat the supervised baseline HARP in all 8 model&ndash;dataset settings (+7.1 AUROC on average) and ACT-ViT in 6 of 8, with about 40&times; fewer projection parameters than PCA.</p>
+              <p class="summary">The paper also introduces within-question AUROC and question-level splits, which separate real hallucination detection from question-difficulty shortcuts, and shows that detectors transfer across LLMs with unlabeled alignment.</p>
+            </div>
+          </article>
 
-			/* Project card hover effect */
-			#projects ul.features li {
-				transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
-				cursor: pointer;
-			}
-			#projects ul.features li:hover {
-				background: rgba(0, 0, 0, 0.35) !important;
-				box-shadow: inset 0 0 0 2px rgba(255,255,255,0.18), 0 8px 32px rgba(0,0,0,0.4);
-				transform: translateY(-3px);
-			}
-			#projects ul.features li:hover::before {
-				opacity: 0.28;
-			}
+          <article class="pub" id="pub-itsc">
+            <div class="media">
+              <button class="zoom" type="button" data-full="images/bgvp_main.jpg" aria-label="Enlarge the BGVP dataset figure"><img src="images/bgvp_main.jpg" alt="BGVP dataset samples: children, elderly, people with disabilities, and non-vulnerable pedestrians with bounding boxes" loading="lazy" /></button>
+              <p class="hint">Click to enlarge</p>
+            </div>
+            <div>
+              <p class="venue">IEEE ITSC 2024</p>
+              <h3>Comparison of Deep Object Detectors on a New Vulnerable Pedestrian Dataset</h3>
+              <p class="authors"><strong>Devansh Sharma</strong>, Tihitina Hade, Qing Tian</p>
+              <p class="summary">Introduced and open-sourced BGVP, an object detection dataset of vulnerable pedestrians: 2,000 images with 5,932 manually annotated boxes in four classes (children, elderly, people with disabilities, non-vulnerable). Fine-tuned COCO-pretrained YOLOv4, YOLOv5, YOLOX, Faster R-CNN, and EfficientDet (best mAP@0.5 of 0.80); every detector was weakest on elderly pedestrians and in dark scenes.</p>
+              <ul class="links">
+                <li><a class="btn sm" href="https://par.nsf.gov/biblio/10635053" target="_blank" rel="noopener"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a></li>
+                <li><a class="btn sm" href="https://doi.org/10.1109/ITSC58415.2024.10920135" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i>DOI</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-			/* Gemini animated gradient text */
-			@keyframes gemini-flow {
-				0%   { background-position: 0% 50%; }
-				50%  { background-position: 100% 50%; }
-				100% { background-position: 0% 50%; }
-			}
-			.gemini-text {
-				background: linear-gradient(270deg, #4285F4, #9B72CB, #00BCD4, #EA4335, #FBBC04, #4285F4);
-				background-size: 400% 400%;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-				animation: gemini-flow 5s ease infinite;
-				font-weight: 700;
-				display: inline-block;
-				text-decoration: none;
-			}
-			a.gemini-text:hover {
-				text-decoration: underline;
-				-webkit-text-fill-color: transparent;
-			}
+    <section class="block" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Perception, multimodal models, and ML systems. Code on GitHub.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="thumb light"><img src="images/viewpoint_main.png" alt="Heatmap of VLM robustness drop across camera yaw offsets" loading="lazy" /></div>
+            <div class="body">
+              <h3>Viewpoint robustness of VLMs</h3>
+              <p>101,760 evaluations of 4 open vision-language models on ALFRED embodied tasks under 35 camera yaw/pitch shifts. Wilcoxon tests showed pitch far more disruptive than yaw, and model size uncorrelated with robustness.</p>
+              <ul class="chips"><li class="chip">Qwen2.5-VL</li><li class="chip">InternVL3</li><li class="chip">AI2-THOR</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/VLM-ViewPoint-Robustness" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="images/sambbox_main.jpg" alt="SAM2 segmentation masks on a CamVid street scene" loading="lazy" /></div>
+            <div class="body">
+              <h3>SAM2 + detection backends</h3>
+              <p>Coupled the SAM2 segmentation foundation model with Grounding DINO (zero-shot) and YOLOv11 (supervised) on CamVid street scenes. Supervised detection + SAM2 beat zero-shot text-prompted detection by 49% Dice.</p>
+              <ul class="chips"><li class="chip">SAM2</li><li class="chip">Grounding DINO</li><li class="chip">YOLOv11</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/SAM-BBox-Automation" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb icon"><i class="fas fa-microscope" aria-hidden="true"></i></div>
+            <div class="body">
+              <h3>MobileSAM + LoRA</h3>
+              <p>Rank-16 LoRA on MobileSAM's TinyViT encoder for nuclei instance segmentation (665 H&amp;E images, 31 tissue types): 0.809 mean Dice (5-fold CV) while training 42.6% of parameters.</p>
+              <ul class="chips"><li class="chip">MobileSAM</li><li class="chip">LoRA</li><li class="chip">TinyViT</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/Nuclei-Instance-Segmentation" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="images/braintumorseg_main.jpg" alt="Brain MRI slice with tumor segmentation overlay" loading="lazy" /></div>
+            <div class="body">
+              <h3>3D brain tumor segmentation</h3>
+              <p>Benchmarked DynUNet vs. SwinUNETR on 3D MRI (MSD Task 01): 0.741 vs. 0.732 Dice. A boundary-aware loss cut edema HD95 by 28% (9.88 mm &rarr; 7.10 mm) at zero inference cost.</p>
+              <ul class="chips"><li class="chip">MONAI</li><li class="chip">DynUNet</li><li class="chip">SwinUNETR</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/3D-BrainTumor-Seg" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb light"><img src="images/cliponhar_main.png" alt="CLIP vs. SigLIP training results" loading="lazy" /></div>
+            <div class="body">
+              <h3>CLIP vs. SigLIP fine-tuning</h3>
+              <p>Contrastive fine-tuning on 15-class activity recognition with cross-batch memory and gradient accumulation (effective batches of 4K&ndash;32K on one GPU). SigLIP reached 86.1% accuracy vs. 80.2% for CLIP.</p>
+              <ul class="chips"><li class="chip">CLIP</li><li class="chip">SigLIP</li><li class="chip">Contrastive learning</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/CLIP-on-HumanActivity-Recognition" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="images/hrnet_main.jpg" alt="HRNet keypoint skeletons on people" loading="lazy" /></div>
+            <div class="body">
+              <h3>HRNet pose estimation</h3>
+              <p>HRNet-w48 pose estimation inference from scratch without MMCV: affine warps, heatmap decoding, and COCO 17-keypoint skeletons.</p>
+              <ul class="chips"><li class="chip">HRNet-w48</li><li class="chip">PyTorch</li><li class="chip">COCO keypoints</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/HRNet_PoseEstimation" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+            <div class="body">
+              <h3>End-to-end MLOps pipeline</h3>
+              <p>DistilBERT 5-class sentiment with MLflow experiment tracking, served as a FastAPI REST API, containerized with Docker, and tested with pytest in GitHub Actions CI (0.68 macro-F1 on Yelp-5).</p>
+              <ul class="chips"><li class="chip">MLflow</li><li class="chip">FastAPI</li><li class="chip">Docker</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/NLP-Sentiment-MLOps" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+            <div class="body">
+              <h3>Tabular ML and a pre-registered A/B test</h3>
+              <p>Leakage-safe feature engineering, Random Forest and XGBoost with time-series cross-validation over 25,979 matches (0.64 ROC-AUC). A pre-registered two-proportion z-test found the home-advantage gap not significant (p = 0.148).</p>
+              <ul class="chips"><li class="chip">scikit-learn</li><li class="chip">XGBoost</li><li class="chip">Plotly Dash</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/Tabular-ml-ab-testing" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+            <div class="body">
+              <h3>Multi-agent research pipeline</h3>
+              <p>A 4-agent LangGraph pipeline on Claude: parallel market-data and news agents (yfinance and Finnhub tool calling) feed technical-analysis and synthesis agents that write a research brief.</p>
+              <ul class="chips"><li class="chip">LangGraph</li><li class="chip">Claude API</li><li class="chip">Tool calling</li></ul>
+              <div class="foot"><a href="https://github.com/devvansh1997/finance-mcp-langchain" target="_blank" rel="noopener">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-			/* Frosted dark box around banner text */
-			#banner .inner {
-				background: rgba(0, 0, 0, 0.55);
-				backdrop-filter: blur(6px);
-				-webkit-backdrop-filter: blur(6px);
-				border-radius: 10px;
-				padding: 3em 3.5em;
-				display: inline-block;
-			}
-			/* Banner subtitle + Scholar button */
-			#banner .banner-sub {
-				font-size: 0.85em; color: rgba(255,255,255,0.75); margin-top: -0.5em; margin-bottom: 1.5em; line-height: 1.6;
-			}
-			#banner .actions.special a.scholar { background-color: #4285F4 !important; border-color: #4285F4 !important; color: #fff !important; }
-			#banner .actions.special a.scholar:hover { background-color: #3367d6 !important; border-color: #3367d6 !important; }
+    <section class="block" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Research and industry roles.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="role-head"><h3>Graduate Researcher</h3><span class="when">Jan 2025 &ndash; Present</span></div>
+            <p class="org">Center for Research in Computer Vision (CRCV), University of Central Florida</p>
+            <ul>
+              <li>Research assistant to Dr. Shahana Ibrahim on LLM interpretability and hallucination detection (<strong>LOTUS</strong>, first author, under review at ICLR 2027): built the response-generation, activation-extraction, and evaluation pipeline, with all baselines under one shared harness.</li>
+              <li>Co-author of <strong>MaRiO</strong> (NeurIPS 2026): built the evaluation harness that benchmarks 23 multimodal LLMs on multi-agent spatial reasoning, ran data curation and annotation, and built the annotation and review tool.</li>
+              <li>Maintain a shared research codebase (Git, code review, unit tests, documentation) running reproducible, large-scale training and evaluation jobs on a SLURM multi-GPU cluster.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="role-head"><h3>Data Operations Manager</h3><span class="when">Jun 2024 &ndash; Aug 2024</span></div>
+            <p class="org">Radford University, Radford, VA</p>
+            <ul>
+              <li>Built Tableau dashboards and optimized data workflows that turned raw survey data into actionable insights for academic and career services teams.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="role-head"><h3>Teaching Assistant</h3><span class="when">Sep 2021 &ndash; Dec 2024</span></div>
+            <p class="org">Bowling Green State University</p>
+            <ul>
+              <li>Supported coursework, grading, and mentoring students through technical problem-solving.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="role-head"><h3>Machine Learning Intern</h3><span class="when">Apr 2022 &ndash; Jun 2022</span></div>
+            <p class="org">Fellowship.AI (remote)</p>
+            <ul>
+              <li>In a cross-functional team, built an end-to-end real-time computer vision pipeline for human activity recognition on video streams (image classification with data augmentation), reaching <strong>96.7% accuracy</strong>.</li>
+              <li>Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) for repetition counting, robust to noisy real-world inputs.</li>
+            </ul>
+          </li>
+          <li>
+            <div class="role-head"><h3>Data Analyst Intern</h3><span class="when">Jul 2019 &ndash; Dec 2019</span></div>
+            <p class="org">Indian Institute of Technology Delhi</p>
+            <ul>
+              <li>Built automated Python pipelines to extract and preprocess large document corpora, with annotation and data quality checks for downstream classification.</li>
+              <li>Applied regex-based parsing to turn unstructured policy documents into structured data for analysis.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-			/* Publication cards: venue, authors, role, links */
-			#research .spotlight .content .venue {
-				display: inline-block; font-size: 0.72em; font-weight: 700; letter-spacing: 0.12em;
-				text-transform: uppercase; color: #00bcd4; margin-bottom: 0.6em;
-			}
-			#research .spotlight .content .authors { font-size: 0.82em; color: rgba(255,255,255,0.6); margin-bottom: 0.9em; }
-			#research .spotlight .content .authors strong { color: #fff; }
-			#research .spotlight .content .authors .note { font-size: 0.9em; }
-			#research .spotlight .content .role { font-size: 0.9em; }
-			#research .spotlight .content .links a { margin-right: 1.4em; }
-			#research .spotlight .image img.contain { object-fit: contain; background: #1b1f27; }
-			/* Wide figure: stack the figure above the text */
-			#research .spotlight.wide { flex-direction: column !important; }
-			#research .spotlight.wide .image { width: 100% !important; height: auto !important; background: #fff; padding: 1.5em 2em; }
-			#research .spotlight.wide .image img { height: auto !important; max-width: 1150px; margin: 0 auto; display: block; padding: 0 !important; }
-			#research .spotlight.wide .content { width: 100% !important; max-width: 60em; margin: 0 auto; }
-			#research .spotlight .image img.contain.light { background: #fff; padding: 1em; box-sizing: border-box; }
+    <section class="block" id="background">
+      <div class="container two">
+        <div class="panel">
+          <h2>Education</h2>
+          <ul class="edu">
+            <li><div><div class="deg">M.Sc. Computer Vision</div><div class="school">University of Central Florida</div></div><div class="meta">2025 &ndash; Dec 2026<br />GPA 3.92</div></li>
+            <li><div><div class="deg">M.Sc. Computer Science</div><div class="school">Bowling Green State University</div></div><div class="meta">2021 &ndash; 2022<br />GPA 3.75</div></li>
+            <li><div><div class="deg">B.Eng. Computer Science</div><div class="school">Manav Rachna International University</div></div><div class="meta">2015 &ndash; 2019<br />GPA 3.20</div></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Skills</h2>
+          <dl class="skills">
+            <dt>Core</dt><dd>Python, C++, SQL, PyTorch, TensorFlow, Hugging Face, Git, Linux</dd>
+            <dt>Vision</dt><dd>Object detection, segmentation, pose estimation, activity recognition; OpenCV, YOLO, SAM2, Grounding DINO, HRNet, ViTs, MONAI, CLIP/SigLIP</dd>
+            <dt>Robotics / AV</dt><dd>ROS2, nuScenes, PointPillars</dd>
+            <dt>Multimodal</dt><dd>Vision-language models (Qwen2.5-VL, InternVL3, LLaVA), LLMs, LoRA/PEFT, LangGraph</dd>
+            <dt>MLOps</dt><dd>Docker, FastAPI, MLflow, W&amp;B, GitHub Actions, pytest, SLURM, AWS (certified)</dd>
+            <dt>ML and data</dt><dd>scikit-learn, XGBoost, pandas, statistics, A/B testing, Plotly, Tableau</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
 
-			/* Project extras */
-			#projects ul.features li.img-viewpoint::before { background-image: url('images/viewpoint_main.png'); }
-			#projects .badge {
-				display: inline-block; font-size: 0.6em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-				padding: 0.15em 0.6em; border: 1px solid rgba(255,255,255,0.5); border-radius: 999px; vertical-align: middle; margin-left: 0.4em;
-			}
-		</style>
-	</head>
-	<body class="landing is-preload">
+  <section class="contact" id="contact">
+    <div class="container">
+      <div>
+        <h2>Let's talk</h2>
+        <p>Open to full-time computer vision and ML engineering roles from January 2027.</p>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:de807845@ucf.edu"><i class="fas fa-envelope" aria-hidden="true"></i>de807845@ucf.edu</a>
+        <a class="btn" href="https://www.linkedin.com/in/devanshsharma1997/" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+        <a class="btn" href="files/Devansh_Sharma_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>Resume</a>
+      </div>
+    </div>
+  </section>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <footer>
+    <div class="container">
+      <span>&copy; <span id="year">2026</span> Devansh Sharma</span>
+      <span>Hand-built, hosted on GitHub Pages</span>
+    </div>
+  </footer>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Devansh Sharma</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="#banner" class="scrolly">Home</a></li>
-											<li><a href="#research" class="scrolly">Research</a></li>
-											<li><a href="#experience" class="scrolly">Experience</a></li>
-											<li><a href="#projects" class="scrolly">Projects</a></li>
-											<li><a href="#footer" class="scrolly">Contact</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
+    <button class="btn sm close" type="button" aria-label="Close">Close</button>
+    <figure style="margin:0"><img alt="" /><figcaption></figcaption></figure>
+  </dialog>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div id="banner-carousel">
-							<div class="slide active" style="background-image: url('images/cara_segmentation.webp')"></div>
-							<div class="slide" style="background-image: url('images/cara_objectdetection.webp')"></div>
-							<div class="slide" style="background-image: url('images/cara_brainsegmentation.jpeg')"></div>
-							<div class="slide" style="background-image: url('images/cara_semanticsegmentation.png')"></div>
-							<div class="slide" style="background-image: url('images/cara_generalized.avif')"></div>
-						</div>
-						<div class="inner">
-							<h2>Devansh Sharma</h2>
-							<p>Computer Vision &amp; ML Engineer &mdash; Perception &bull; Multimodal AI &bull; ML Systems</p>
-							<p class="banner-sub">
-								M.Sc. Computer Vision at UCF's Center for Research in Computer Vision (graduating Dec 2026).<br />
-								Publications at NeurIPS 2026 and IEEE ITSC 2024; first-author paper under review at ICLR 2027.<br />
-								Open to full-time computer vision and ML engineering roles.
-							</p>
-							<ul class="actions special">
-								<li><a href="mailto:de807845@ucf.edu" class="button primary">Email Me</a></li>
-								<li><a href="https://github.com/devvansh1997" class="button" target="_blank">GitHub</a></li>
-								<li><a href="https://www.linkedin.com/in/devanshsharma1997/" class="button" target="_blank">LinkedIn</a></li>
-								<li><a href="https://scholar.google.com/citations?user=_Q3loWUAAAAJ" class="button scholar" target="_blank">Scholar</a></li>
-							</ul>
-						</div>
-						<a href="#research" class="more scrolly">Learn More</a>
-					</section>
-
-			<!-- Research -->
-					<section id="research" class="wrapper alt style2">
-						<div class="research-header">
-							<h2>Publications</h2>
-							<p>Benchmarks and methods for finding where vision and language models fail.</p>
-						</div>
-						<section class="spotlight">
-							<div class="image"><img src="images/mario_main.png" alt="MaRiO benchmark overview" /></div>
-							<div class="content">
-								<span class="venue">NeurIPS 2026 &middot; Evaluations &amp; Datasets Track</span>
-								<h2>MaRiO: Multi-agent Collaborative Reasoning via Shared Observations in MLLMs</h2>
-								<p class="authors">Nathaniel Redmond*, Fidel Omar Tito Cruz*, <strong>Devansh Sharma</strong>, Shehreen Azad, Sirshapan Mitra, Shruti Vyas, Yogesh S Rawat <span class="note">(*equal contribution)</span></p>
-								<p>A benchmark of 3,255 questions over 1,680 multi-agent observation sets (real scenes plus VirtualHome, Habitat-Sim, and AI2-THOR) that tests whether multimodal LLMs can reason across agents' views with no shared camera information. Of 23 models evaluated zero-shot, the best (Gemini 2.5 Pro) reached 55.7% against 73.2% for humans; most open-source models scored 30&ndash;42%.</p>
-								<p class="role"><strong>My role:</strong> co-designed the benchmark, ran data curation and annotation, built the annotation and review tool used by three expert annotators, and built the evaluation harness.</p>
-								<p class="links"><a href="https://github.com/devvansh1997/MaRIO-Benchmark" target="_blank" class="gemini-text">Code &#8599;</a><a href="https://huggingface.co/datasets/mariobench2026/MaRiO" target="_blank" class="gemini-text">Dataset &#8599;</a></p>
-							</div>
-						</section>
-						<section class="spotlight wide">
-							<div class="image"><img src="images/lotus_main.jpg" alt="LOTUS method: activation extraction, token-wise order statistics, projection, low-rank representation, detection readout" class="contain light" /></div>
-							<div class="content">
-								<span class="venue">Under review &middot; ICLR 2027</span>
-								<h2>LLM Hallucination Detection via Low-rank Multilinear Decomposition</h2>
-								<p class="authors"><strong>Devansh Sharma</strong>, Faizul Rakib Sayem, Shahana Ibrahim</p>
-								<p>LOTUS summarizes a large language model's hidden states with token order statistics and compresses them with an unsupervised Tucker-2 decomposition into 896-dimensional features for a hallucination classifier. It beat the supervised baseline HARP in all 8 model&ndash;dataset settings (+7.1 AUROC on average) and ACT-ViT in 6 of 8, with about 40&times; fewer projection parameters than PCA.</p>
-								<p>The paper also introduces within-question AUROC and question-level splits, which separate real hallucination detection from question-difficulty shortcuts, and shows that detectors transfer across LLMs with unlabeled alignment.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/bgvp_main.gif" alt="BGVP vulnerable pedestrian dataset" /></div>
-							<div class="content">
-								<span class="venue">IEEE ITSC 2024</span>
-								<h2>Comparison of Deep Object Detectors on a New Vulnerable Pedestrian Dataset</h2>
-								<p class="authors"><strong>Devansh Sharma</strong>, Tihitina Hade, Qing Tian</p>
-								<p>Introduced and open-sourced BGVP, an object detection dataset of vulnerable pedestrians: 2,000 images with 5,932 manually annotated boxes in four classes (children, elderly, people with disabilities, non-vulnerable). Fine-tuned COCO-pretrained YOLOv4, YOLOv5, YOLOX, Faster R-CNN, and EfficientDet (best mAP@0.5 of 0.80); every detector was weakest on elderly pedestrians and in dark scenes.</p>
-								<p class="links"><a href="https://par.nsf.gov/biblio/10635053" target="_blank" class="gemini-text">Paper &#8599;</a><a href="https://doi.org/10.1109/ITSC58415.2024.10920135" target="_blank" class="gemini-text">DOI &#8599;</a></p>
-							</div>
-						</section>
-					</section>
-
-				<!-- Experience -->
-					<section id="experience" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Experience</h2>
-								<p>Building real-world systems across academia and industry.</p>
-							</header>
-							<div class="timeline-wrap">
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">Jan 2025 &ndash; Present</span>
-									<h3>Graduate Researcher</h3>
-									<span class="org">Center for Research in Computer Vision (CRCV) &mdash; UCF</span>
-									<ul>
-										<li>Research assistant to Dr. Shahana Ibrahim on LLM interpretability and hallucination detection (<strong>LOTUS</strong>, first author, under review at ICLR 2027): built the response-generation, activation-extraction, and evaluation pipeline, with all baselines under one shared harness.</li>
-										<li>Co-author of <strong>MaRiO</strong> (NeurIPS 2026): built the evaluation harness that benchmarks 23 multimodal LLMs on multi-agent spatial reasoning, ran data curation and annotation, and built the annotation and review tool.</li>
-										<li>Maintain a shared research codebase (Git, code review, unit tests, documentation) running reproducible, large-scale training and evaluation jobs on a SLURM multi-GPU cluster.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">Jun 2024 &ndash; Aug 2024</span>
-									<h3>Data Operations Manager</h3>
-									<span class="org">Radford University &mdash; Radford, VA</span>
-									<ul>
-										<li>Built Tableau dashboards and optimized data workflows that turned raw survey data into actionable insights for academic and career services teams.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">May 2024 &ndash; Jun 2024</span>
-									<h3>Fire Safety Assistant</h3>
-									<span class="org">Campus Operations &mdash; Bowling Green State University</span>
-									<ul>
-										<li>Conducted fire safety checks for extinguishers across campus and tested life safety equipment including exit signs and emergency lights.</li>
-										<li>Processed and managed work orders through TMA systems for campus-wide coordination.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">Sep 2021 &ndash; Dec 2024</span>
-									<h3>Teaching Assistant</h3>
-									<span class="org">Bowling Green State University</span>
-									<ul>
-										<li>Supported coursework, grading, and mentoring students through technical problem-solving.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">Apr 2022 &ndash; Jun 2022</span>
-									<h3>Machine Learning Intern</h3>
-									<span class="org">Fellowship.AI &mdash; Remote</span>
-									<ul>
-										<li>In a cross-functional team, built an end-to-end real-time computer vision pipeline for human activity recognition on video streams (image classification with data augmentation), reaching <strong>96.7% accuracy</strong>.</li>
-										<li>Integrated pose estimation (MediaPipe/BlazePose) with temporal modeling (RepNet) for repetition counting, robust to noisy real-world inputs.</li>
-									</ul>
-								</div>
-
-								<div class="timeline-entry">
-									<div class="timeline-dot"></div>
-									<span class="timeline-date">Jul 2019 &ndash; Dec 2019</span>
-									<h3>Data Analyst Intern</h3>
-									<span class="org">Indian Institute of Technology Delhi</span>
-									<ul>
-										<li>Built automated Python pipelines to extract and preprocess large document corpora, with annotation and data quality checks for downstream classification.</li>
-										<li>Applied regex-based parsing to turn unstructured policy documents into structured data for analysis.</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</section>
-
-				<!-- Projects -->
-					<section id="projects" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Projects</h2>
-								<p>Perception, multimodal models, and ML systems. Code on GitHub.</p>
-							</header>
-							<ul class="features">
-								<li class="icon solid fa-car">
-									<h3>Lookout: Real-Time AV Perception Stack <span class="badge">In progress</span></h3>
-									<p>Camera + LiDAR + radar perception for autonomous driving on ROS2: 3D detection (PointPillars), 6-camera 2D detection, sensor fusion, and multi-object tracking, targeting real-time on a single consumer GPU. Built so far: the nuScenes-to-ROS2 replay pipeline (6 cameras, LiDAR, 5 radars, full calibration) and the transform layer.</p>
-								</li>
-								<li class="icon solid fa-eye img-viewpoint">
-									<h3><a href="https://github.com/devvansh1997/VLM-ViewPoint-Robustness" target="_blank">Viewpoint Robustness of VLMs</a></h3>
-									<p>101,760 evaluations of 4 open vision-language models on ALFRED embodied tasks under 35 camera yaw/pitch shifts. Wilcoxon tests showed pitch far more disruptive than yaw, and model size uncorrelated with robustness.</p>
-								</li>
-								<li class="icon solid fa-draw-polygon img-sambbox">
-									<h3><a href="https://github.com/devvansh1997/SAM-BBox-Automation" target="_blank">SAM2 + Detection Backends</a></h3>
-									<p>Coupled the SAM2 segmentation foundation model with Grounding DINO (zero-shot) and YOLOv11 (supervised) on CamVid street scenes. Supervised detection + SAM2 beat zero-shot text-prompted detection by 49% Dice.</p>
-								</li>
-								<li class="icon solid fa-microscope">
-									<h3><a href="https://github.com/devvansh1997/Nuclei-Instance-Segmentation" target="_blank">MobileSAM + LoRA</a></h3>
-									<p>Rank-16 LoRA on MobileSAM's TinyViT encoder for nuclei instance segmentation (665 H&amp;E images, 31 tissue types): 0.809 mean Dice (5-fold CV) while training 42.6% of parameters.</p>
-								</li>
-								<li class="icon solid fa-x-ray img-brain">
-									<h3><a href="https://github.com/devvansh1997/3D-BrainTumor-Seg" target="_blank">3D Brain Tumor Segmentation</a></h3>
-									<p>Benchmarked DynUNet vs. SwinUNETR on 3D MRI (MSD Task 01): 0.741 vs. 0.732 Dice. A boundary-aware loss cut edema HD95 by 28% (9.88 mm &rarr; 7.10 mm) at zero inference cost.</p>
-								</li>
-								<li class="icon solid fa-running img-cliphar">
-									<h3><a href="https://github.com/devvansh1997/CLIP-on-HumanActivity-Recognition" target="_blank">CLIP vs. SigLIP Fine-tuning</a></h3>
-									<p>Contrastive fine-tuning on 15-class activity recognition with cross-batch memory and gradient accumulation (effective batches of 4K&ndash;32K on one GPU). SigLIP reached 86.1% accuracy vs. 80.2% for CLIP.</p>
-								</li>
-								<li class="icon solid fa-server">
-									<h3><a href="https://github.com/devvansh1997/NLP-Sentiment-MLOps" target="_blank">End-to-End MLOps Pipeline</a></h3>
-									<p>DistilBERT 5-class sentiment with MLflow experiment tracking, served as a FastAPI REST API, containerized with Docker, and tested with pytest in GitHub Actions CI (0.68 macro-F1 on Yelp-5).</p>
-								</li>
-								<li class="icon solid fa-walking img-hrnet">
-									<h3><a href="https://github.com/devvansh1997/HRNet_PoseEstimation" target="_blank">HRNet Pose Estimation</a></h3>
-									<p>HRNet-w48 pose estimation inference from scratch without MMCV: affine warps, heatmap decoding, and COCO 17-keypoint skeletons.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://github.com/devvansh1997" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/devanshsharma1997/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=_Q3loWUAAAAJ" class="icon solid fa-graduation-cap" target="_blank"><span class="label">Google Scholar</span></a></li>
-							<li><a href="mailto:de807845@ucf.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Devansh Sharma</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<script>
-			(function() {
-				var slides = document.querySelectorAll('#banner-carousel .slide');
-				var current = 0;
-				setInterval(function() {
-					slides[current].classList.remove('active');
-					current = (current + 1) % slides.length;
-					slides[current].classList.add('active');
-				}, 5000);
-			})();
-		</script>
-
-	</body>
+  <script src="assets/site.js?v=2026102001" defer></script>
+</body>
 </html>
